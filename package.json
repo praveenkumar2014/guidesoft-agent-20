@@ -1,0 +1,15 @@
+{
+  "name": "guidesoft-agent-20",
+  "version": "20.0.0",
+  "description": "GUIDESOFT AGENT 20.0 - Multi-agent creative & engineering platform",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p public && cp -r README.md ARCHITECTURE.md systemprompt.md skills.md config skills examples references public/ 2>/dev/null || true && echo 'Static build ready'",
+    "dev": "npx serve public",
+    "start": "npx serve public"
+  },
+  "keywords": ["ai-agent", "multi-agent", "guidesoft", "antigravity", "vibe-coding"],
+  "author": "GUIDESOFT",
+  "license": "MIT",
+  "engines": {"node": ">=18"}
+}
