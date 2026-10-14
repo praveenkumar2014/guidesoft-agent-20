@@ -1,0 +1,32 @@
+# Supported providers (OpenAI-compatible gateways preferred)
+
+providers:
+  - name: openrouter
+    base_url: https://openrouter.ai/api/v1
+    notes: Unified access to many models
+
+  - name: litellm
+    base_url: http://localhost:4000   # or your hosted LiteLLM
+    notes: Self-hosted model gateway
+
+  - name: anthropic
+    base_url: https://api.anthropic.com
+    notes: Claude models
+
+  - name: google
+    base_url: https://generativelanguage.googleapis.com
+    notes: Gemini models
+
+  - name: xai
+    base_url: https://api.x.ai/v1
+    notes: Grok models
+
+  - name: openai
+    base_url: https://api.openai.com/v1
+    notes: GPT models
+
+# Free / low-cost options preferred when quality allows
+free_tier_priority:
+  - gemini-2.5-flash
+  - grok-4
+  - openrouter free models

@@ -1,0 +1,38 @@
+# GUIDESOFT AGENT 20.0 — Model Routing Configuration
+
+# Users can override at runtime with:
+# Models: reasoning=..., coding=..., image=...
+
+routing:
+  planning_reasoning:
+    - claude-4-opus
+    - gemini-2.5-pro
+    - o3
+    - grok-4
+
+  fast_coding:
+    - gemini-2.5-flash
+    - claude-4-sonnet
+    - grok-4
+    - gpt-4.1
+
+  long_context:
+    - gemini-2.5-pro
+    - claude-4
+    - gpt-4.1
+
+  image_generation:
+    - flux-pro
+    - imagen-3
+    - dall-e-3
+    - grok-imagine
+
+  vision:
+    - gemini-2.5-pro
+    - gpt-4o
+    - claude-4
+
+  default: auto
+
+# Cost / speed preference when quality is comparable
+preference: balanced   # options: quality | balanced | cost | speed
